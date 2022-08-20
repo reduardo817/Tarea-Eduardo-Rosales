@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Actividad evalauada #2</title>
+    </head>
+    <style>
+       h1  { text-align: center;
+
+       }
+       body { background-color: bisque;
+        }
+        form {
+            width: 300px;
+            background: #24303c;
+            padding: 30px;
+            margin:auto;
+            border-radius: 4px;
+            text-align:left;     
+        }
+        label { 
+            color: white
+        }
+
+        input { 
+            text-align: right;
+        }
+
+    </style>
+    <body>
+        <h1 style="color:brown; margin-bottom: 10px; font-size: 40px;">Registro de productos</h1>
+            <form action="resultadoformulario.html" method="get">
+               <label width="50%">Código:</label>
+               <input type="text" id="Codigo" name="Código"/>
+               <br>
+               <label>Descripción:</label>
+               <input type="text" id="Descripción" name="Descripción"/>
+               <br>
+               <label>Código de barra:</label>
+               <input type="text" id="Código de barra" name="Código de barra"/>
+               <br>
+               <label>Precio unitario:</label>
+               <input type="text" id="Precio unitario" name="Precio unitario"/>
+               <br>
+               <label>Stock:</label>
+               <input type="text" id="Stock" name="Stock"/>
+               <br>
+               <label>Proveedor:</label>
+               <input type="text" id="Proveedor" name="Proveedor"/>
+               <br>
+               <label>Estado:</label>
+               <input type="checkbox" id="Activo"/><label for="Activo">
+               <br>
+               <label>Categoría:</label>
+               <select name="select">
+                  <option value="Categoría 1">Categoría 1</option>
+                  <option value="Categoria 2">Categoria 2</option>
+                  <option value="Categoria 3">Categoria 3</option>
+                  <option value="Categoria 4">Categoria 4</option>
+               </select>
+               <br> <input type="submit" id="btnGuardar" value="Guardar"/>
+               <br> <input type="button" id="Cancelar" onclick="alert ('Mensaje')" value="Cancelar"/>
+        </form>
+    </body>
+</html>
